@@ -1,0 +1,192 @@
+<DOCTYPE! html>
+  <html class="no-js" lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Joanna Purosto | My contact details!</title>
+      <link rel="stylesheet" href="styles/css/foundation.css">
+      <link rel="stylesheet" href="styles/css/app.css">
+    </head>
+    <body>
+      <div class="contact-background">
+        <h1 class="center">Contact me!</h1>
+      </div>
+        <div>
+          <form name="contact" class="form" method="post" onSubmit="return formValidation();">
+            <div class="row">
+              <div class="large-12 columns">
+                <label>First Name
+                  <input type="text" placeholder="Give me your name!" name="fname"/>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Last Name
+                  <input type="text" placeholder="..please" name="lname" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Gender
+                  <select name="gender">
+                    <option selected="" value="Default">Select</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Age
+                  <input type="text" placeholder="Write your age in numbers" id="age" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Email
+                  <input type="text" placeholder="Write valid email" id="email" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Website
+                  <input type="text" placeholder="Write website address" id="address" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Comment
+                  <input type="text" placeholder="Leave feedback" id="comment" />
+                </label>
+              </div>
+            </div>
+            <input type='submit' name='submit' class='submit' />
+          </form>
+        </div>
+        <div class="grid-x grid-padding-x content-section">
+          <div class="large-8 medium-8 columns">
+            <h2>Contact info:</h2>
+            <p>Joanna Purosto</p>
+            <p>+358 40 577 6860</p>
+          </div>
+          <div class="large-1 medium-1 columns hover">
+            <figure>
+              <a href="https://twitter.com/JoannaPurosto"><img src="images/twitter.png" class="social-icon"></a>
+            </figure>
+          </div>
+          <div class="large-1 medium-1 columns hover">
+            <figure>
+              <a href="https://www.instagram.com/joannajii"><img src="images/insta.jpg" class="social-icon"></a>
+            </figure>
+          </div>
+          <div class="large-1 medium-1 columns hover">
+            <figure>
+              <a href="https://www.linkedin.com/in/joannapurosto/"><img src="images/linkedin.png" class="social-icon"></a>
+            </figure>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    //Adding variables
+    function formValidation()  {
+      var fname = document.contact.fname;
+      var lname = document.contact.lname;
+      var gender = document.contact.gender;
+      var age = document.contact.age;
+      var uemail = document.contact.email;
+
+      if(fname_validation(fname,25))
+      if(lname_validation(lname,25))
+      if(genderselect(ugender))
+      if(age_validation(age,18,100))
+      if(ValidateEmail(uemail))
+
+      return false;
+    }
+    //Validating first name
+    function fname_validation (fname,max)
+    {
+    var fnameLength = fname.value.length;
+    if (fnameLength == 0 || fnameLength > max)
+    {
+    alert("First name should not be empty and it should contain less than " +max+ " characters.");
+    fname.focus();
+    return false;
+    }
+    return true;
+    }
+
+    //Validating last name
+    function lname_validation (lname,max)
+    {
+    var lnameLength = lname.value.length;
+    if (lnameLength == 0 || lnameLength > max)
+    {
+    alert("Last name should not be empty and it should contain less than " +max+ " characters.");
+    lname.focus();
+    return false;
+    }
+    return true;
+    }
+
+    //Validating gender selection
+    function genderselect(ugender)
+    {
+    if(ugender.value == "Default")
+    {
+    alert("Select your gender");
+    ugender.focus();
+    return false;
+    }
+    else {
+    return true;
+    }
+    }
+
+    //Validating age
+    function age_validation (age,min,max)
+    {
+    if (age == 0 || age > min || age < max)
+    {
+    alert("Age should be between 18 and 100 years old");
+    age.focus();
+    return false;
+    }
+    return true;
+    }
+
+    //Validate Email
+    function ValidateEmail(uemail)
+    {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(uemail.value.match(mailformat))
+    {
+    return true;
+    }
+    else
+    {
+    alert("You have entered an invalid email address!");
+    uemail.focus();
+    return false;
+    }
+    }
+    </script>
+      <!--Add contact me form including the following fields:
+      • Gender (Dropdown box) (Validation: no blank)
+      • Age (Text box) (Validation: no blank – older than 18 – below than 100)
+      • Email address (Text box) (Validation: no blank – proper email – less than 50 character)
+      • Website address (Text box) (Validation: no blank – proper URL  – less than 50 character)
+      • Comment (Text box) (Validation: no blank – proper URL  – less than 255 character)
+      • Reset button – To reset the entered information  After submit, you need to validate all the information, and finally show at the bottom of the page.
+    -->
+    </body>
+  </html>

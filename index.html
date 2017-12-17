@@ -1,0 +1,82 @@
+<DOCTYPE! html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joanna Purosto | Website projects that I have made</title>
+    <link rel="stylesheet" href="styles/css/foundation.css">
+    <link rel="stylesheet" href="styles/css/app.css">
+  </head>
+  <body>
+
+    <!--Here is the page loader, but page loads so fast that Idk if it works. Script before closing body tag.-->
+    <div id="loading">
+      <img id="loading-image" src="images/Preloader_6.gif" alt="Loading..." />
+    </div>
+
+    <div class="hero-full-screen" alt="Joanna Purosto">
+      <div class="top-content-section">
+        <div class="top-bar">
+          <div class="top-bar-left">
+            <ul class="menu">
+              <li class="menu-text"><img src="images/outologo.png" alt="logo"></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="joker.html">Joker</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="middle-content-section">
+        <h1 id="name">Joanna Purosto</h1>
+        <p class="description">I'm a marketing professional studying web development because I believe that in the future everyone should be able to code.</p>
+        <p class="description">If you are using a mobile device, please, go away. :D</p>
+        <a href ="projects.html"><button class="button">Projects</button></a>
+        <a href ="contact.html"><button class="button">Contact me</button></a>
+      </div>
+      <footer>
+        <div class="grid-x grid-padding-x">
+        <div class="large-4 medium-4 small-4 cell">
+          <p>Here you can see the time:</p>
+        </div>
+        <div class="large-4 medium-4 small-4 cell">
+          <p id="date"></p>
+        </div>
+        <div class="large-4 medium-4 small-4 cell">
+          <p>Yes, it is very useful.</p>
+        </div>
+        </div>
+      </footer>
+      <div class="bottom-content-section" data-magellan data-threshold="0">
+          <!--I don't want to use the section below, but I might want to use it later-->
+          <!-- <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a> -->
+      </div>
+    </div>
+    <script>
+    var today = new Date();
+    var d = today.getDate();
+    var m = today.getMonth()+1;
+    var y = today.getFullYear();
+    var h = today.getHours();
+    var min = today.getMinutes();
+
+    if(d<10) {
+        d = '0'+d
+    }
+
+    if(m<10) {
+        m = '0'+m
+    }
+
+    document.getElementById("date").innerHTML = d + '.' + m + '.' + y + ' ' + h + ':' + min;
+    </script>
+    <script>
+      window.onload = function() {
+        document.getElementById("loading").style.display = "none" ;
+      }
+    </script>
+  </body>
+</html>

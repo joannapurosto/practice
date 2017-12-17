@@ -1,0 +1,336 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*Basic stylings that apply to each site*/
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  padding-top: 0.9em;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  padding-top: 0.9em;
+}
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  padding-top: 0.9em;
+}
+p {
+  font-family: 'Lato', sans-serif;
+}
+li {
+  font-family: 'Lato', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+.content-section {
+  padding: 10 50;
+}
+
+.center {
+  text-align: center;
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  z-index: 99
+}
+
+#loading-image {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  z-index: 100
+}
+
+/*Contact page*/
+.form {
+  padding: 30 40;
+  background-color: #8939c0;
+  width: 40%;
+  margin: 30 auto 30;
+  opacity: 0.94;
+}
+
+.contact-background {
+  background: url("../../images/j-background.jpg");
+}
+
+.submit {
+  padding: 10 8;
+  background-color: white;
+}
+
+.social-icon {
+  width: 30px;
+  padding-top: 50px;
+}
+
+#email-error {
+  display: none;
+}
+
+/* I found this nice hover effect: https://codepen.io/nxworld/pen/ZYNOBZ */
+.hover figure {
+	position: relative;
+}
+.hover figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 5;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 25%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 25%;
+	}
+}
+
+
+/*Front page styling*/
+.description {
+  margin: 20px 50px;
+}
+
+.button {
+  background-color: #8939c0;
+  padding: 8px 15px;
+}
+
+/*Frontpage's full screen image*/
+.hero-full-screen {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("../../images/joanna.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+/*frontpage hero heading*/
+.hero {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.hero-full-screen .middle-content-section {
+  text-align: center;
+  color: #000;
+}
+
+.hero-full-screen .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu {
+  background: transparent;
+  display: inline-flex;
+}
+
+.hero-full-screen .top-bar .menu-text {
+  color: #fefefe;
+}
+
+/*logo and navigation*/
+.menu-text img {
+  height: 70px;
+}
+
+.hero-full-screen .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen .top-bar .menu a {
+  color: #000;
+  margin: 10px 20px;
+}
+
+/*portfolio styling*/
+
+.work-feature-block {
+  padding: 10px 0;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+}
+
+.work-feature-block-image {
+  display: block;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.project-image {
+
+}
+
+.project-link {
+  padding-bottom: 15px;
+}
+
+.page-hero {
+  background-color: #555;
+  padding-bottom: 5em;
+}
+
+.page-hero h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.project-description {
+  padding: 50px 20px;
+}
+
+.scroll-hidden {
+  display: none;
+}
+
+.scroll-visible {
+    padding: 20px;
+    margin: 500 0 0 40;
+    border: 2px solid;
+    background-color: white;
+    float: left;
+    position: fixed;
+}
+
+/*Skills*/
+.skills-list {
+  width: 30%;
+  padding: 40px;
+  background-color: #efefef;
+  margin: 20px auto;
+}
+
+/*Gallery*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+  height: 100%;
+}
+.diy-slideshow{
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+figure{
+  position: absolute;
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption{
+  position: absolute;
+  font-family: sans-serif;
+  font-size: .8em;
+  bottom: .75em;
+  right: .35em;
+  padding: .25em;
+  color: #fff;
+  background: rgba(0,0,0, .25);
+  border-radius: 2px;
+}
+figcaption a{
+  color: #fff;
+}
+figure.show{
+  opacity: 1;
+  position: static;
+  transition: 1s opacity;
+}
+.next, .prev{
+  color: #fff;
+  position: absolute;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  margin-top: -.75em;
+  opacity: .3;
+  user-select: none;
+}
+.next:hover, .prev:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.next{
+  right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.prev{
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/*Footer*/
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+footer p {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,102 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+    </head>
+    <body>
+      <h1>JavaScript demosite</h1>
+      <p id="name">Mouse over this!</p>
+      <script>
+      // Date in window alert
+      /*var today = new Date();
+      var d = today.getDate();
+      var m = today.getMonth()+1; //January is 0!
+      var y = today.getFullYear();
+
+      if(d<10) {
+          d = '0'+d
+      }
+
+      if(m<10) {
+          m = '0'+m
+      }
+
+      window.alert('day: ' + d + '\nMonth: ' + m + '\nYear: ' + y);
+
+      //Array of months
+      var months = ['January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December'];
+
+      months[11] = 'Last Month';
+
+      console.log(months[11]);
+      console.log(months.length);
+
+      //Variable task
+      var myText = 'JavaScript is fun to learn!';
+
+      console.log(myText.length);
+      console.log(myText.toUpperCase());
+      console.log(myText.toLowerCase());
+      console.log(myText.charAt(5));
+      console.log(myText.indexOf('fun'));
+      console.log(myText.substring(11,17));
+      console.log(myText.split(' '));
+      console.log(myText.replace('fun','cool'));
+
+      // Age task
+      var age = 13;
+
+      if (age > 18) {
+        console.log('Is older than 18.');
+      }
+      else {
+        console.log('Is 18 years old or younger.');
+      }
+
+      var pageName = 'Home Page';
+        switch (pageName) {
+          case 'Home Page':
+            document.title = 'Welcome to the page ' + pageName;
+            break;
+          case 'Contact':
+            document.title = 'Welcome to the page ' + pageName;
+            break;
+          default:
+            document.title = 'Welcome to our website!';
+            break;
+            }
+
+        document.onscroll = function() {
+        console.log("Page got scrolled up and down!");
+        }
+
+       for (var num = 1; num < 1001; num++) {
+         document.write(num + '</br>');
+       }
+       */
+
+       // Mouseover = user moves the mouse over an element
+       // Element.addEventListener(‘event’ functionName [, Boolean]);
+
+       // On mouseover add window alert
+
+       var el = document.getElementById("name");
+       el.addEventListener("mouseover", showData, true);
+
+       function showData() {
+         window.alert("You mosed over it, really!?");
+       };
+
+      </script>
+    </body>
+  </html>

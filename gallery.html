@@ -1,0 +1,58 @@
+<DOCTYPE! html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joanna Purosto | Website projects that I have made</title>
+    <link rel="stylesheet" href="styles/css/foundation.css">
+    <link rel="stylesheet" href="styles/css/app.css">
+  </head>
+    <body>
+      <div class="page-hero">
+        <h1>My favorite photos with brief description</h1>
+      </div>
+      <div class="diy-slideshow">
+      	<figure class="show">
+      		<img src="https://images.unsplash.com/photo-1502465396982-37b95ab30fbc?auto=format&fit=crop&w=2550&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" width="100%" /><figcaption>I just visited Louvre in Paris and this image brought the museum to my mind.</figcaption>
+      	</figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1503178427426-413e153f886c?auto=format&fit=crop&w=1500&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" width="100%" /><figcaption>Dubai is one of my favourite places in the world.</figcaption>
+      	</figure>
+      	<figure>
+      		<img src="https://images.unsplash.com/photo-1504703500545-4c4ee081b155?auto=format&fit=crop&w=1500&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" width="100%" /><figcaption>Finland is da best.</figcaption>
+      	</figure>
+        <span class="prev">&laquo;</span>
+        <span class="next">&raquo;</span>
+      </div>
+      <script>
+      (function(){
+
+        var counter = 0,
+        $items = document.querySelectorAll('.diy-slideshow figure'),
+        numItems = $items.length;
+
+        var showCurrent = function(){
+        var itemToShow = Math.abs(counter%numItems);
+
+        [].forEach.call( $items, function(el){
+        el.classList.remove('show');
+        });
+
+        $items[itemToShow].classList.add('show');
+        };
+
+        document.querySelector('.next').addEventListener('click', function() {
+        counter++;
+        showCurrent();
+        }, false);
+
+        document.querySelector('.prev').addEventListener('click', function() {
+        counter--;
+        showCurrent();
+        }, false);
+
+        })();
+        </script>
+    </body>
+  </html>
