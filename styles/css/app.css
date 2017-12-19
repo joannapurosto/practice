@@ -62,7 +62,7 @@ ul {
 }
 
 .contact-background {
-  background: url("../../images/j-background.jpg");
+  background: url("../images/j-background.jpg");
 }
 
 .submit {
@@ -79,7 +79,7 @@ ul {
   display: none;
 }
 
-/* I found this nice hover effect: https://codepen.io/nxworld/pen/ZYNOBZ */
+/* I found this nice hover effect: https://codepen.io/nxworld/pen/ZYNOBZ and used it in contact page social icons*/
 .hover figure {
 	position: relative;
 }
@@ -222,7 +222,7 @@ ul {
 }
 
 .page-hero {
-  background-color: #555;
+  background: linear-gradient(to bottom, #004e94 20%, #01247e 100%);
   padding-bottom: 5em;
 }
 
@@ -257,12 +257,6 @@ ul {
 }
 
 /*Gallery*/
-body {
-  margin: 0;
-  padding: 0;
-  background: #111;
-  height: 100%;
-}
 .diy-slideshow{
   position: relative;
   display: block;
