@@ -167,16 +167,16 @@ ul {
   fill: #fefefe;
 }
 
-.hero-full-screen .top-bar {
+.top-bar {
   background: transparent;
 }
 
-.hero-full-screen .top-bar .menu {
+.top-bar .menu {
   background: transparent;
   display: inline-flex;
 }
 
-.hero-full-screen .top-bar .menu-text {
+.top-bar .menu-text {
   color: #fefefe;
 }
 
@@ -185,7 +185,7 @@ ul {
   height: 70px;
 }
 
-.hero-full-screen .top-bar .menu li {
+.top-bar .menu li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +194,7 @@ ul {
           align-items: center;
 }
 
-.hero-full-screen .top-bar .menu a {
+.top-bar .menu a {
   color: #000;
   margin: 10px 20px;
 }
