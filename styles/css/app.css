@@ -28,7 +28,7 @@ ul {
   list-style-type: none;
 }
 .content-section {
-  padding: 10 50;
+  padding: 10px 50px;
 }
 
 .center {
@@ -58,7 +58,6 @@ ul {
   background-color: #8939c0;
   width: 40%;
   margin: 30px auto 30px;
-  opacity: 0.94;
 }
 
 .contact-background {
@@ -169,6 +168,7 @@ ul {
 
 .top-bar {
   background: transparent;
+  position:fixed;
 }
 
 .top-bar .menu {
@@ -176,12 +176,8 @@ ul {
   display: inline-flex;
 }
 
-.top-bar .menu-text {
-  color: #fefefe;
-}
-
 /*logo and navigation*/
-.menu-text img {
+.logo img {
   height: 70px;
 }
 
@@ -196,7 +192,6 @@ ul {
 
 .top-bar .menu a {
   color: #000;
-  margin: 10px 20px;
 }
 
 /*portfolio styling*/
@@ -235,7 +230,7 @@ ul {
 
 .scroll-visible {
     padding: 20px;
-    margin: 500 0 0 40;
+    margin: 380px 0 0 40px;
     border: 2px solid;
     background-color: white;
     float: left;
