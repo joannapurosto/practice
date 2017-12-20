@@ -54,15 +54,15 @@ ul {
 
 /*Contact page*/
 .form {
-  padding: 30 40;
+  padding: 30px 40px;
   background-color: #8939c0;
   width: 40%;
-  margin: 30 auto 30;
+  margin: 30px auto 30px;
   opacity: 0.94;
 }
 
 .contact-background {
-  background: url("../images/j-background.jpg");
+  background: url("../../images/j-background.jpg");
 }
 
 .submit {
@@ -202,17 +202,13 @@ ul {
 /*portfolio styling*/
 
 .project-image {
-  padding: 50px 15px;
+  padding: 100px 15px;
 }
 
 .work-feature-block-image {
   display: block;
   margin: auto;
   padding: 10px 0;
-}
-
-.project-image {
-
 }
 
 .project-link {
