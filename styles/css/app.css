@@ -1,3 +1,18 @@
+/*
+Content:
+1. fonts
+2. basic styling that apply to each sites
+3. Loading image
+4. Contact page styling
+5. Social icons styling
+6. Front page styling
+7. portfolio styling
+8. Skills listing
+9. Gallery styling
+10. Footer
+*/
+
+
 /*fonts*/
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Lato');
@@ -73,6 +88,7 @@ ul {
 
 .rounded-social-buttons {
   text-align: center;
+  margin-top: 30px;
 }
 
 .rounded-social-buttons .social-button {
